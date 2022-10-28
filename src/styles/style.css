@@ -8,3 +8,32 @@ body,html {         /* Fixes issue of scrollbar appearing */
     padding: 0;
     background-color: rgb(55,127,212);
 }
+
+#container {
+    display: grid;
+    grid-template-rows: 50px 1fr 30px;
+}
+
+#card-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 25px;
+    padding: 70px;
+}
+
+.cards {
+    /* Grid stuff */
+    display: grid;
+    grid-template-rows: 1fr 40px;
+    /* General styling */
+    border: 2px solid white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.1em;
+    color: #000;
+    background-color: rgb(200,221,248);
+    /* Transitions for hover effect */
+    transition: transform 0.3s;
+}

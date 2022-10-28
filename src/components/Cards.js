@@ -16,18 +16,18 @@ import junker from '../img/junkerqueen.png'
 function Cards(props) {
     return(        
         <div id="card-container">
-            <div className="cards" onClick={props.handleScore}><img src={anna} alt="anna"></img><span>Ana</span></div>
-            <div className="cards" onClick={props.handleScore}><img src={ashe} alt="ashe"></img><span>Ashe</span></div>
-            <div className="cards" onClick={props.handleScore}><img src={baptiste} alt="baptiste"></img><span>Baptiste</span></div>
-            <div className="cards" onClick={props.handleScore}><img src={bastion} alt="bastion"></img><span>Bastion</span></div>
-            <div className="cards" onClick={props.handleScore}><img src={brigitte} alt="brigitte"></img><span>Brigitte</span></div>
-            <div className="cards" onClick={props.handleScore}><img src={cassidy} alt="cassidy"></img><span>Cassidy</span></div>
-            <div className="cards" onClick={props.handleScore}><img src={doomfist}alt="doomfist"></img><span>Doomfist</span></div>
-            <div className="cards" onClick={props.handleScore}><img src={dva} alt="dva"></img><span>D.Va</span></div>
-            <div className="cards" onClick={props.handleScore}><img src={echo} alt="echo"></img><span>Echo</span></div>
-            <div className="cards" onClick={props.handleScore}><img src={genji} alt="genji"></img><span>Genji</span></div>
-            <div className="cards" onClick={props.handleScore}><img src={hanzo} alt="hanzo"></img><span>Hanzo</span></div>
-            <div className="cards" onClick={props.handleScore}><img src={junker} alt="junkerqueen"></img><span>Junker Queen</span></div>
+            <div className="cards" onClick={() => props.handleClick('anna')}><img src={anna} alt="anna"></img><span>Ana</span></div>
+            <div className="cards" onClick={() => props.handleClick('ashe')}><img src={ashe} alt="ashe"></img><span>Ashe</span></div>
+            <div className="cards" onClick={() => props.handleClick('baptiste')}><img src={baptiste} alt="baptiste"></img><span>Baptiste</span></div>
+            <div className="cards" onClick={() => props.handleClick('bastion')}><img src={bastion} alt="bastion"></img><span>Bastion</span></div>
+            <div className="cards" onClick={() => props.handleClick('brigitte')}><img src={brigitte} alt="brigitte"></img><span>Brigitte</span></div>
+            <div className="cards" onClick={() => props.handleClick('cassidy')}><img src={cassidy} alt="cassidy"></img><span>Cassidy</span></div>
+            <div className="cards" onClick={() => props.handleClick('doomfist')}><img src={doomfist} alt="doomfist"></img><span>Doomfist</span></div>
+            <div className="cards" onClick={() => props.handleClick('dva')}><img src={dva} alt="dva"></img><span>D.Va</span></div>
+            <div className="cards" onClick={() => props.handleClick('echo')}><img src={echo} alt="echo"></img><span>Echo</span></div>
+            <div className="cards" onClick={() => props.handleClick('genji')}><img src={genji} alt="genji"></img><span>Genji</span></div>
+            <div className="cards" onClick={() => props.handleClick('hanzo')}><img src={hanzo} alt="hanzo"></img><span>Hanzo</span></div>
+            <div className="cards" onClick={() => props.handleClick('junkerqueen')}><img src={junker} alt="junkerqueen"></img><span>Junker Queen</span></div>
         </div>
     )
 }

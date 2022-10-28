@@ -42,10 +42,10 @@ function App() {
         <div id="header">
           <h1>Overwatch Memory Card Game</h1>
           <h2>Test your memory by only clicking on each character once!</h2>
+          <h3 id="current-score" className="scores">Current Score: {score}&nbsp;&nbsp;|&nbsp;&nbsp;</h3>
+          <h3 id="best-score" className="scores">HIGHEST Score: {bestScore}</h3>
         </div>
         <div id="content-container">
-            <h3 id="current-score" className="scores">Current Score: {score}</h3>
-            <h3 id="best-score" className="scores">Best Score: {bestScore}</h3>
             <div id="card-container">
               { chars.map((idx) => (
                 < Cards 
@@ -54,10 +54,6 @@ function App() {
                 />
               )) }
             </div>
-            {/* < Cards 
-              handleClick = {handleClick}
-              chars = {chars}
-            /> */}
         </div>
         <div id="footer">Copyright © 2022 Waldorfio</div>
     </div>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Cards from './components/Cards'
 import './styles/style.css';
 
@@ -10,6 +10,7 @@ function App() {
     'cassidy', 'doomfist', 'dva', 'echo', 'genji', 'hanzo',
     'junkerqueen']
   const [score, setScore] = useState(0);
+  const [bestScore, setBestScore] = useState(0);
   const [charList, setCharList] = useState(chars);
 
   // State Handlers
@@ -21,21 +22,30 @@ function App() {
     } else {
       setScore(0);
       setCharList(chars); // Reset the list
+      if (bestScore < score) {
+        setBestScore(score);
+      }
       console.log('WRONG, score/list reset! ')
     }
   }
 
+  // NO NEED TO USE SIDE EFFECTS FOR THIS SIMPLE APP
   // useEffect(() => {
-  //   setScore(score + 1);
-  //   console.log('something chaned!')
-  // }, charList)
+  //   if (bestScore < score) {
+  //     setBestScore(score);
+  //   }
+  //   console.log('updated best score')
+  // }, [bestScore])
 
   return (
     <div id="container">
-        <div id="header"></div>
+        <div id="header">
+          <h1>Overwatch Memory Card Game</h1>
+          <h2>Test your memory by only clicking on each character once!</h2>
+        </div>
         <div id="content-container">
-            <div id="current-score" className="scores">Current Score: {score}</div>
-            <div id="best-score" className="scores">Best Score: {charList}</div>
+            <h3 id="current-score" className="scores">Current Score: {score}</h3>
+            <h3 id="best-score" className="scores">Best Score: {bestScore}</h3>
             < Cards 
               handleClick = {handleClick}
             />

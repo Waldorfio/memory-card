@@ -6,7 +6,7 @@ function App() {
 
   // State Declaration
   const chars = [
-    'anna', 'ashe', 'baptiste', 'bastion', 'brigitte',
+    'ana', 'ashe', 'baptiste', 'bastion', 'brigitte',
     'cassidy', 'doomfist', 'dva', 'echo', 'genji', 'hanzo',
     'junkerqueen']
   const [score, setScore] = useState(0);
@@ -46,9 +46,18 @@ function App() {
         <div id="content-container">
             <h3 id="current-score" className="scores">Current Score: {score}</h3>
             <h3 id="best-score" className="scores">Best Score: {bestScore}</h3>
-            < Cards 
+            <div id="card-container">
+              { chars.map((idx) => (
+                < Cards 
+                  handleClick = {handleClick}
+                  char = {idx}
+                />
+              )) }
+            </div>
+            {/* < Cards 
               handleClick = {handleClick}
-            />
+              chars = {chars}
+            /> */}
         </div>
         <div id="footer">Copyright © 2022 Waldorfio</div>
     </div>

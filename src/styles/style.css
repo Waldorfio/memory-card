@@ -41,3 +41,20 @@ body,html {         /* Fixes issue of scrollbar appearing */
     transform: scale(1.2);
     background-color: white;
 }
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+span {
+    background-color: rgb(238,244,251);
+    text-align: center;
+}
+
+#footer {
+    background-color: rgb(56,56,56);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

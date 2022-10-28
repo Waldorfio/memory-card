@@ -88,9 +88,10 @@ span {
 #footer {
     background-color: rgb(56,56,56);
     color: white;
-    font-size: 1.1em;
+    font-size: 0.9em;
     text-align: center;
     padding: 10px;
     align-self: center;
     justify-self: center;
+    border-radius: 8px;
 }

@@ -37,3 +37,7 @@ body,html {         /* Fixes issue of scrollbar appearing */
     /* Transitions for hover effect */
     transition: transform 0.3s;
 }
+.cards:hover {
+    transform: scale(1.2);
+    background-color: white;
+}

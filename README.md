@@ -1,25 +1,24 @@
 # Project: Memory Card Game
-A CV application website, developed to enforce my learnings on React fundamentals (components and states management).
+An Overwatch based Memory Card Game, developed to enforce my learnings on React fundamentals (hooks and state management).
 Application developed using React.js and CSS. Built using the create-react-app.
 
 ### Features
-- Allows users to create their own resume using a ready made template
+- Test your memory of the latest Overwatch 2 hero cast, by clicking on each character portrait once!
+- Scoreboard showcasing current, and highest score
 
 ![](screencap.PNG)
 
 ### Goals
-- Practice the fundamentals of state and component management with Class based components
-- Create a dynamic app with multiple components and states
+- Practice the fundamentals of state and component management with Functional components
+- Create a dynamic app with state management
 
 ### Challenges Faced
-- Creating a stateful app with multiple children able to make dynamic changes to the parent state
-- Passing states between children and parents -> pass functions setting the state for two way state management
-- Key management: neatly creating keys for states and passing them between compoonents
-- Adapting to class based component syntax in React
+- Setting state within the correct context
+- Adapting to functional based components in React
 
 ## How to run the app
 ### 1. Click the hosted link below
-#### [Live Link 👈](https://waldorfio.github.io/cv-application/)
+#### [Live Link 👈](https://waldorfio.github.io/memory-card/)
 
 OR
 
@@ -30,12 +29,10 @@ OR
 4.	Go to  http://localhost:8080/ in your browser, and start the app!
 
 ## How to use the app
-1. Enter your details in the form
-2. Use the Add/Delete button to add and remove sections for experience/education
+1. Click on character portraits only once!
 
 ## Future Features
-- Refactor and simplify parent methods, and key management
 - Refactor code to TypeScript
-- Add option to export/generate Resume to PDF
+- Fix mobile layout
 
 ## Dependencies

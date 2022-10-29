@@ -86,12 +86,28 @@ span {
 }
 
 #footer {
-    background-color: rgb(56,56,56);
-    color: white;
+    display: grid;
+    grid-template-columns: 1fr 25px;
+    gap: 20px;
+    background-color: rgb(204, 204, 204);
+    color: rgb(0, 0, 0);
     font-size: 0.9em;
     text-align: center;
     padding: 10px;
     align-self: center;
     justify-self: center;
     border-radius: 8px;
+}
+#footer-title {
+    background-color: rgb(204, 204, 204);
+    align-self: center;
+    justify-self: center;
+}
+#git {
+    justify-self: center;
+    align-self: center;
+    transition: transform 1.2s
+}
+#git:hover {
+    transform: rotate(360deg);
 }

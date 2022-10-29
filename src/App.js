@@ -63,7 +63,10 @@ function App() {
               )) }
             </div>
         </div>
-        <div id="footer">Copyright © 2022 Waldorfio</div>
+        <div id="footer">
+          <span id='footer-title'>Copyright © 2022 Waldorfio</span>
+          <img id='git' src={require('./img/github-logo.png')} alt={'github-logo'}></img>
+        </div>
     </div>
   );
 }

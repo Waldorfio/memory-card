@@ -2,40 +2,48 @@ import React, { useState } from 'react'
 import Cards from './components/Cards'
 import './styles/style.css';
 
+const heroArr = [
+  'ana', 'ashe', 'baptiste', 'bastion', 'brigitte',
+  'cassidy', 'doomfist', 'dva', 'echo', 'genji', 'hanzo',
+  'junkerqueen']
+
+// Knuth Shuffle Algorithm.
+function shuffle(array) {
+  let currentIndex = array.length,  randomIndex;
+
+  while (currentIndex !== 0) { // While there remain elements to shuffle.
+    randomIndex = Math.floor(Math.random() * currentIndex); // Pick a remaining element.
+    currentIndex--;
+    [array[currentIndex], array[randomIndex]] = [ // And swap it with the current element.
+      array[randomIndex], array[currentIndex]];
+  }
+  return array;
+}
+
 function App() {
 
   // State Declaration
-  const chars = [
-    'ana', 'ashe', 'baptiste', 'bastion', 'brigitte',
-    'cassidy', 'doomfist', 'dva', 'echo', 'genji', 'hanzo',
-    'junkerqueen']
   const [score, setScore] = useState(0);
   const [bestScore, setBestScore] = useState(0);
-  const [charList, setCharList] = useState(chars);
+  const [heroList, setHeroList] = useState(heroArr); // A list of heros which have not been yet selected
+  const [heroShuffle] = useState(heroArr); // A list of shuffled heroes, for each click
 
   // State Handlers
   const handleClick = (hero) => {
-    if (charList.includes(hero)) {
+    if (heroList.includes(hero)) { // If clicked a new hero
       setScore(score + 1);
-      setCharList(charList.filter(a => a !== hero));
+      setHeroList(heroList.filter(a => a !== hero));
+      shuffle(heroShuffle)
       console.log('CORRECT! +1')
-    } else {
+    } else {  // If clicked the same hero
       setScore(0);
-      setCharList(chars); // Reset the list
+      setHeroList(heroArr); // Reset the list
       if (bestScore < score) {
         setBestScore(score);
       }
       console.log('WRONG, score/list reset! ')
     }
   }
-
-  // NO NEED TO USE SIDE EFFECTS FOR THIS SIMPLE APP
-  // useEffect(() => {
-  //   if (bestScore < score) {
-  //     setBestScore(score);
-  //   }
-  //   console.log('updated best score')
-  // }, [bestScore])
 
   return (
     <div id="container">
@@ -47,7 +55,7 @@ function App() {
         </div>
         <div id="content-container">
             <div id="card-container">
-              { chars.map((idx) => (
+              { heroShuffle.map((idx) => (
                 < Cards 
                   handleClick = {handleClick}
                   char = {idx}

@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Project: Memory Card Game
+A CV application website, developed to enforce my learnings on React fundamentals (components and states management).
+Application developed using React.js and CSS. Built using the create-react-app.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Features
+- Allows users to create their own resume using a ready made template
 
-## Available Scripts
+![](screencap.PNG)
 
-In the project directory, you can run:
+### Goals
+- Practice the fundamentals of state and component management with Class based components
+- Create a dynamic app with multiple components and states
 
-### `npm start`
+### Challenges Faced
+- Creating a stateful app with multiple children able to make dynamic changes to the parent state
+- Passing states between children and parents -> pass functions setting the state for two way state management
+- Key management: neatly creating keys for states and passing them between compoonents
+- Adapting to class based component syntax in React
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## How to run the app
+### 1. Click the hosted link below
+#### [Live Link 👈](https://waldorfio.github.io/cv-application/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+OR
 
-### `npm test`
+### 2. Host it locally
+1.	Either fork or download the app and open the folder in the cli
+2.	Install all dependencies using the `npm i` command
+3.	Start the web server using the `npm run local` command. The app will be served at http://localhost:8080/
+4.	Go to  http://localhost:8080/ in your browser, and start the app!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How to use the app
+1. Enter your details in the form
+2. Use the Add/Delete button to add and remove sections for experience/education
 
-### `npm run build`
+## Future Features
+- Refactor and simplify parent methods, and key management
+- Refactor code to TypeScript
+- Add option to export/generate Resume to PDF
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Dependencies

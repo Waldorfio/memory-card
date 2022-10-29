@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.a80530ac.css",
+    "main.js": "/memory-card/static/js/main.bfb2ec4b.js",
+    "static/media/ana.png": "/memory-card/static/media/ana.3ec32cb3c92308b6a292.png",
+    "static/media/ashe.png": "/memory-card/static/media/ashe.6c011ece559784e99a0c.png",
+    "static/media/bastion.png": "/memory-card/static/media/bastion.40285d6aaca447f099ce.png",
+    "static/media/cassidy.png": "/memory-card/static/media/cassidy.d964105c59b85440c835.png",
+    "static/media/brigitte.png": "/memory-card/static/media/brigitte.8fbb5b8ad2006ef8a138.png",
+    "static/media/dva.png": "/memory-card/static/media/dva.d674cf367208d15cf4a5.png",
+    "static/media/baptiste.png": "/memory-card/static/media/baptiste.35d0540bc9e9e4e5f9d4.png",
+    "static/media/genji.png": "/memory-card/static/media/genji.f4155f94ce5e85445649.png",
+    "static/media/junkerqueen.png": "/memory-card/static/media/junkerqueen.2ba38b6b5205be770ce5.png",
+    "static/media/hanzo.png": "/memory-card/static/media/hanzo.f2cc1c59bc32bf86388c.png",
+    "static/media/echo.png": "/memory-card/static/media/echo.72f5936599548836a894.png",
+    "static/media/doomfist.png": "/memory-card/static/media/doomfist.5a469e4c9dc7d7307cb1.png",
+    "index.html": "/memory-card/index.html",
+    "main.a80530ac.css.map": "/memory-card/static/css/main.a80530ac.css.map",
+    "main.bfb2ec4b.js.map": "/memory-card/static/js/main.bfb2ec4b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a80530ac.css",
+    "static/js/main.bfb2ec4b.js"
+  ]
+}

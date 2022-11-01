@@ -1,6 +1,7 @@
 # Project: Memory Card Game
 An Overwatch based Memory Card Game, developed to enforce my learnings on React fundamentals (hooks and state management).
 Application developed using React.js and CSS. Built using the create-react-app.
+## [Live Link 👈](https://waldorfio.github.io/memory-card/)
 
 ### Features
 - Test your memory of the latest Overwatch 2 hero cast, by clicking on each character portrait once!
@@ -17,8 +18,7 @@ Application developed using React.js and CSS. Built using the create-react-app.
 - Adapting to functional based components in React
 
 ## How to run the app
-### 1. Click the hosted link below
-#### [Live Link 👈](https://waldorfio.github.io/memory-card/)
+### 1. Click the [hosted link](https://waldorfio.github.io/memory-card/)
 
 OR
 

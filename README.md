@@ -36,3 +36,4 @@ OR
 - Fix mobile layout
 
 ## Dependencies
+- React

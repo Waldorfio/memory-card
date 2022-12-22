@@ -60,6 +60,7 @@ h2 {
     display: grid;
     grid-template-rows: 1fr 40px;
     /* General styling */
+    cursor: pointer;
     border: 2px solid white;
     border-radius: 5px;
     text-transform: uppercase;
